@@ -1,24 +1,41 @@
-## Esta repo contiene todo para la creaccion de una Base de Datos Geoespacial de la Republica Dominicana.
+# Base de Datos Geoespacial de la República Dominicana
 
-## Esta segmentado por:
+Esta repositorio contiene todo lo necesario para la **creación de una Base de Datos Geoespacial** de la República Dominicana.
+
+---
+
+## Estructura del proyecto
+
+El proyecto está segmentado por diferentes niveles administrativos y puntos de interés:
 
 ### Provincias
-![Texto alternativo](example_data/example-provincias-data.png)
+![Provincias](example_data/example-provincias-data.png)
 
 ### Municipios
-![Texto alternativo](example_data/example-municipios-data.png)
-### distritos
-![Texto alternativo](example_data/example-distritos-data.png)
-Barrios, Secciones y un plus como ejemplo que son puntos de interes, en este caso de hospitales.
-![Texto alternativo](example_data/vista-HospitalesCerca.png)
+![Municipios](example_data/example-municipios-data.png)
 
-### Funciones, triggers y vistas
+### Distritos
+![Distritos](example_data/example-distritos-data.png)
 
-### En este proyectos encontrara diversias funciones implementadas con funciones nativa de postgis, para casos de uso en el que se quiera medir la distancia entre un punto y otro, los puntos mas cercanos a un punto de interes
-- Permite encontrar la distancia en metros entre diversas provincias.
-![Texto alternativo](example_data/func-DistanciaEntreProvincias.png)
+### Barrios, Secciones y Puntos de Interés
+En este caso, se incluyen ejemplos de **hospitales** como puntos de interés.  
+![Hospitales Cercanos](example_data/vista-HospitalesCerca.png)
 
-- Permite encontrar las provincias mas cercanas a otra.
- ![Texto alternativo](example_data/func-provinciasMascercanas.png)
+---
 
- ![Texto alternativo](example_data/func-provinciasmascercasGEO.png)
+## Funciones, Triggers y Vistas
+
+Este proyecto incluye **diversas funciones nativas de PostGIS**, ideales para medir distancias, encontrar entidades cercanas y facilitar análisis geoespacial:
+
+- **Distancia entre provincias**  
+  Permite calcular la distancia en metros entre diversas provincias.  
+  ![Distancia entre Provincias](example_data/func-DistanciaEntreProvincias.png)
+
+- **Provincias más cercanas**  
+  Permite encontrar las provincias más cercanas a otra.  
+  ![Provincias Más Cercanas](example_data/func-provinciasMascercanas.png)  
+  ![Visualización Geo](example_data/func-provinciasmascercasGEO.png)
+
+---
+
+> Este repositorio está pensado para desarrolladores y analistas que quieran trabajar con datos geoespaciales de la República Dominicana, utilizando PostGIS y SQL avanzado.
